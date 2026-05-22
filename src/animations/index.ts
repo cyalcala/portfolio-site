@@ -322,12 +322,12 @@ const animateHeroNav = () => {
     ease: 'power4.inOut',
   });
 
-  gsap.to('#svg-my-en-name g path', {
+  gsap.to('#svg-my-en-name .letter', {
     y: 0,
     delay: 0.2,
     duration: 1.5,
     ease: 'power4.inOut',
-    stagger: 0.01,
+    stagger: 0.03,
   });
 
   gsap.to('#star', {
