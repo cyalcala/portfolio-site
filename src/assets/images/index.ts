@@ -1,4 +1,4 @@
-import profile from './profile.png';
+import profile from './profile.jpg';
 import profile2 from './profile2.jpg';
 import esmail from './esmail.webp';
 import mohammad from './mohammad.webp';

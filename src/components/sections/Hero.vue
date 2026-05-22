@@ -62,20 +62,20 @@
 
           <div
             id="profile-container"
-            class="relative col-span-4 mt-10 h-[20vh] max-w-lg flex-col rounded-lg select-none sm:mt-0 sm:h-full md:flex md:h-[50vh]"
+            class="relative col-span-full mt-8 h-[45vh] max-w-md mx-auto flex-col rounded-lg select-none sm:col-span-4 sm:mx-0 sm:mt-0 sm:h-full md:flex md:h-[50vh]"
           >
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
             <img
               id="profile-img"
               :src="profile"
               alt="Cyrus Alcala profile"
-              class="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
+              class="size-full scale-90 rounded-lg object-cover object-center brightness-105"
             />
           </div>
 
           <!-- content-end justify-self-end  -->
           <div
-            class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
+            class="relative col-span-full mt-6 h-16 overflow-clip text-end sm:col-span-4 sm:mt-0 sm:h-full"
           >
             <div
               id="available-for-work"
