@@ -6,7 +6,7 @@
     >
       <div class="relative flex w-full flex-col items-center">
         <div class="w-full items-end overflow-clip">
-          <div class="flex w-full items-start gap-10">
+          <div class="flex w-full items-start gap-10 pt-20 sm:pt-0">
             <MyName />
             <Star id="star" class="hide-on-mobile translate-x-full" />
           </div>
@@ -69,7 +69,7 @@
               id="profile-img"
               :src="profile"
               alt="Cyrus Alcala profile"
-              class="size-full scale-90 rounded-lg object-cover object-center brightness-105"
+              class="size-full scale-90 rounded-lg object-cover object-center mix-blend-screen brightness-90 grayscale"
             />
           </div>
 
