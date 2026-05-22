@@ -35,7 +35,7 @@
             :data-cal-config="dataCalConfig"
             label="Get in touch"
           /> -->
-          <Button label="Get in touch" url="https://wa.me/967775367671" />
+          <Button label="Get in touch" url="https://www.linkedin.com/in/cyrusalcala/" />
         </div>
       </div>
       <div
@@ -59,7 +59,7 @@
               Working Globally
             </p>
             <p class="flex size-full items-center justify-start pr-2 pl-1">
-              Available Sep '24
+              Available Now
             </p>
           </div>
         </div>
@@ -68,9 +68,9 @@
           <p class="w-full font-bold uppercase">For further inquiries</p>
           <Link
             class="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-            label="hetari4all@gmail"
+            label="cyrusalcala.agency@gmail.com"
             :icon="true"
-            url="mailto:hetari4all@gmail"
+            url="mailto:cyrusalcala.agency@gmail.com"
           />
         </div>
       </div>

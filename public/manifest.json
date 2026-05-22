@@ -1,6 +1,6 @@
 {
-  "name": "Ebraheem Alhetari Portfolio",
-  "short_name": "Ebraheem Alhetari Portfolio",
+  "name": "Cyrus Alcala Portfolio",
+  "short_name": "Cyrus Alcala Portfolio",
   "icons": [
     {
       "src": "/apple-touch-icon-180x180.png",
@@ -13,6 +13,6 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/portfolio/",
+  "start_url": "/",
   "display": "standalone"
 }

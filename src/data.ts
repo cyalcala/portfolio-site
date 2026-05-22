@@ -37,20 +37,16 @@ const navbarLinks = [
 
 const socialLinks = [
   {
-    label: 'X',
-    url: 'https://x.com/hetaridev',
-  },
-  {
-    label: 'Telegram',
-    url: 'https://t.me/e_1_e',
-  },
-  {
     label: 'GitHub',
-    url: 'https://github.com/hetari',
+    url: 'https://github.com/cyalcala',
   },
   {
     label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    url: 'https://www.linkedin.com/in/cyrusalcala/',
+  },
+  {
+    label: 'Medium',
+    url: 'https://medium.com/@cyalcala',
   },
 ];
 
@@ -66,14 +62,14 @@ const resourceLinks = [
 ];
 
 const heroText =
-  'A freelance full-stack developer, making good shit since 2023, hiding bad shit since 2023.';
+  'An AI Builder and Technical Writer, building autonomous systems and writing developer-focused guides.';
 
-const locationPlace = `15°22'22.0"N 44°10'39.5"E`;
-const locationCountry = 'Yemen, Sanaa';
+const locationPlace = `14°35'59"N 120°59'0"E`;
+const locationCountry = 'Philippines, Manila';
 
-// cal.com
+// cal.com (not active by default for Cyrus)
 const dataCalNamespace = '30min';
-const dataCalLink = 'brhoom/30min';
+const dataCalLink = 'cyrusalcala/30min';
 const dataCalConfig =
   '{"layout":"month_view", "theme": "dark", "brand": "#8C8C73"}';
 

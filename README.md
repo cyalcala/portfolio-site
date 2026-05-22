@@ -1,70 +1,26 @@
-# Ebraheem Alhetari - Full-Stack Developer Portfolio
+# Cyrus Alcala - AI Builder & Technical Writer Portfolio
 
-### Enjoying my project? Please show your appreciation by starring it on GitHub! ⭐
+Welcome to my portfolio! I'm **Cyrus Alcala**, an AI Builder and Technical Writer specializing in building autonomous systems, RAG pipelines, CRM integrations, and authoring clear, developer-focused technical guides.
 
-Welcome to my portfolio! I'm **Ebraheem Alhetari**, a full-stack developer and freelancer with a passion for creating immersive web experiences. Specializing in **Vue.js**, **GSAP** animations, and **Tailwind CSS**, I craft elegant, responsive, and fully animated websites.
+This website is built using **Vue.js**, **GSAP** (GreenSock Animation Platform), **Tailwind CSS**, and **Lenis** (for smooth scroll integration). It is deployed via **Cloudflare Pages** at [cyrusalcala.pages.dev](https://cyrusalcala.pages.dev).
 
-## 📜 Important Note
-
-If you would like to use or modify this portfolio, please:
-
-1. **Star** this repository on GitHub.
-2. **Fork** the repository instead of cloning or downloading it directly.
-3. **Credit** Ebraheem Alhetari as the original coder and animator, and acknowledge **Huy Nguyen** for the original UI design.
-
-In the `data.ts` file, there are resource links that credit the original designer and other relevant sources:
-
-```ts
-const resourceLinks = [
-  {
-    label: 'Huy Nguyen (the UI designer)',
-    url: 'https://www.huyng.xyz',
-  },
-  {
-    label: 'Ebraheem Alhetari',
-    url: 'https://github.com/Hetari/portfolio',
-  },
-```
-
-By following these guidelines, you'll be respecting the effort and collaboration behind this project.
-
+---
 
 ## 🛠 Tech Stack
 
-This portfolio showcases my expertise in modern web technologies, including:
+- **Framework**: Vue 3 (Composition API + TypeScript)
+- **Styling**: Tailwind CSS v4
+- **Animations**: GSAP (GreenSock Animation Platform) + Custom ScrollTrigger Animations
+- **Smooth Scroll**: Lenis Scroll
+- **Build Tool**: Vite.js
 
-- [**Vue.js**](https://vuejs.org/) (with Composition API & TypeScript)
-- [**GSAP**](https://greensock.com/gsap/) (for stunning animations)
-- [**Tailwind CSS**](https://tailwindcss.com/) (for efficient styling)
-- [**Lenis**](https://lenis.darkroom.engineering/) (smooth scrolling)
-- [**Vite.js**](https://vitejs.dev/) (fast development and build tool)
-
-## ✨ Features
-
-The entire portfolio is a dynamic and animated experience, designed to capture attention and showcase my skills. A key aspect is its visually captivating UI, originally designed by the talented freelancer **Huy Nguyen**, whom I acknowledge and credit for allowing me to use and clone his design.
-
-## 🔍 Portfolio Sections
-
-- **Loading Screen**: A fully animated, immersive start to the experience.
-- **Hero**: A powerful introduction highlighting my name and expertise.
-- **Services**: An overview of what I offer as a developer.
-- **My Works**: A collection of my best projects, demonstrating my skills.
-- **About Me**: A deep dive into who I am as a developer.
-- **Testimonials**: Real feedback from people I've worked with.
-- **Contact Me**: Easily get in touch via the contact form.
-- **Footer**: Site navigation and social links.
+---
 
 ## 🚀 Getting Started
 
-To view the project locally, follow these steps:
+To run the project locally, follow these steps:
 
 ```bash
-# Clone the repository
-git clone https://github.com/hetari/portfolio
-
-# Navigate to the project directory
-cd portfolio
-
 # Install dependencies
 npm install
 
@@ -72,12 +28,53 @@ npm install
 npm run dev
 ```
 
-You can now view the portfolio on `http://localhost:5173` in your browser.
+The site will be available locally at `http://localhost:5173/`.
 
-## 🌱 Future Plans
+---
 
-I am continuously improving my portfolio and plan to add **Arabic language support** soon, making it fully bilingual for both English and Arabic users.
+## 📦 Production Build
 
-## 🎨 Acknowledgments
+To compile the application for production:
 
-I want to extend a special thank you to **Huy Nguyen** for his original UI design, which I have cloned with his permission. His creative vision has been instrumental in shaping the look and feel of this portfolio.
+```bash
+npm run build
+```
+
+The built site will be located in the `dist/` directory.
+
+---
+
+## ☁️ Deployment on Cloudflare Pages
+
+To deploy this site on Cloudflare Pages, follow these steps:
+
+1. **Push Changes to GitHub**:
+   Ensure all changes are pushed to your repository:
+   ```bash
+   git add .
+   git commit -m "Configure portfolio for Cyrus Alcala"
+   git push origin main
+   ```
+
+2. **Set up Cloudflare Pages**:
+   - Go to your [Cloudflare Dashboard](https://dash.cloudflare.com/).
+   - Navigate to **Workers & Pages** > **Pages** > **Connect to Git**.
+   - Select your repository: `portfolio-site`.
+   - Set the following build settings:
+     - **Framework preset**: `Vite` (or `None`)
+     - **Build command**: `npm run build`
+     - **Build output directory**: `dist`
+     - **Node.js Version**: `20` or later (configured in Environment Variables if needed, e.g. `NODE_VERSION=20`)
+   - Click **Save and Deploy**.
+
+3. **Configure Custom Domain**:
+   - In Cloudflare Pages, go to your project settings.
+   - Go to the **Custom domains** tab.
+   - Add your custom domain or ensure the default `cyrusalcala.pages.dev` subdomain is configured.
+
+---
+
+## 🎨 Credits & Acknowledgments
+
+- **Original UI Design**: Huy Nguyen ([huyng.xyz](https://www.huyng.xyz))
+- **Original Code & Animations**: Ebraheem Alhetari ([GitHub](https://github.com/Hetari/portfolio))

@@ -37,16 +37,14 @@
         <img
           :src="profile2"
           class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
-          alt="Headshot of Ebraheem facing a camera"
+          alt="Headshot of Cyrus Alcala facing a camera"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
         <p
           class="heading-4 relative w-full max-w-[40ch] leading-snug font-medium text-balance"
         >
-          With a passion for design and development, I take projects from
-          ideation to launch, ensuring a seamless journey that leaves a lasting
-          positive impact on the digital landscape and your business.
+          As an AI Builder and Technical Writer, I design and construct autonomous systems, automate business workflows, and author clear, developer-focused guides.
         </p>
 
         <div
@@ -56,12 +54,8 @@
             ( ABOUT ME )
           </p>
           <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
-            Creating great web experiences is my primary focus. I ensure each
-            project leaves users with a feel-good sensation through meticulous
-            attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
+            My primary focus is building intelligent systems that optimize operations and eliminate repetitive tasks. Using tools like n8n, Zapier, and GoHighLevel, I integrate webhooks, CRMs, and LLMs to create seamless automations. In parallel, I translate complex tech concepts into accessible documentation and articles. <br /><br />
+            When I'm not writing code or building automations, you can find me publishing essays on Medium, sharing insights on LinkedIn, or reading about the latest in AI and software engineering.
           </p>
         </div>
       </div>
@@ -79,7 +73,7 @@
   import { textSplitterIntoChar } from '@/functions';
   import { onBeforeMount, onMounted, ref } from 'vue';
 
-  const aboutMe = ref('ٍSelected Projects /');
+  const aboutMe = ref('Selected Projects /');
 
   // const initialPath = ref(`M0 0H${width.value}  V${height.value} H0 Z`);
   // const targetPath = ref(
@@ -88,7 +82,7 @@
 
   onBeforeMount(() => {
     aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
+      'AI Builder, Automation Specialist, Technical Writer/',
       true,
       true,
     );
