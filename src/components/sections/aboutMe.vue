@@ -32,11 +32,18 @@
 
     <div class="padding-y md:column-gap mt-6 grid grid-cols-12">
       <div
-        class="pointer-events-none col-span-full content-end rounded-lg select-none md:col-span-4"
+        class="pointer-events-auto relative group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5]"
       >
+        <!-- Full color image (bottom) -->
         <img
           :src="profile2"
-          class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
+          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out brightness-90"
+          alt="Headshot of Cyrus Alcala facing a camera"
+        />
+        <!-- Grayscale/blend image (top) -->
+        <img
+          :src="profile2"
+          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out mix-blend-screen brightness-90 grayscale group-hover:opacity-0"
           alt="Headshot of Cyrus Alcala facing a camera"
         />
       </div>

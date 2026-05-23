@@ -347,7 +347,7 @@ const animateHeroNav = () => {
     },
   });
 
-  gsap.to('#profile-img', {
+  gsap.to(['#profile-img', '#profile-img-color'], {
     scale: 1,
     delay: 0.4,
     duration: 1.5,
