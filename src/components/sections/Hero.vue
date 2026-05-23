@@ -62,7 +62,9 @@
 
           <div
             id="profile-container"
-            class="relative w-full col-span-full mt-8 h-[45vh] max-w-md mx-auto flex-col rounded-lg select-none sm:col-span-4 sm:mx-0 sm:mt-0 sm:h-full md:flex md:h-[50vh] group overflow-hidden"
+            class="relative w-full col-span-full mt-8 h-[45vh] max-w-md mx-auto flex-col rounded-lg select-none sm:col-span-4 sm:mx-0 sm:mt-0 sm:h-full md:flex md:h-[50vh] group overflow-hidden cursor-pointer"
+            :class="{ 'is-active': isColorActive }"
+            @click="toggleColor"
           >
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
             <!-- Grayscale/blend image (bottom) -->
@@ -77,7 +79,7 @@
               id="profile-img-color"
               :src="profile"
               alt="Cyrus Alcala profile"
-              class="absolute inset-0 size-full scale-90 rounded-lg object-cover object-center transition-all duration-700 ease-in-out brightness-105 opacity-0 group-hover:opacity-100"
+              class="absolute inset-0 size-full scale-90 rounded-lg object-cover object-center transition-all duration-700 ease-in-out brightness-105 opacity-0"
             />
           </div>
 
@@ -119,9 +121,21 @@
 
   const whoAmI = ref(heroText);
   const AvailableForWorkDate = ref('');
+  const isColorActive = ref(false);
+
+  const toggleColor = () => {
+    isColorActive.value = !isColorActive.value;
+  };
 
   onBeforeMount(() => {
     whoAmI.value = textSplitterIntoChar(whoAmI.value);
     AvailableForWorkDate.value = getAvailableForWorkDate();
   });
 </script>
+
+<style scoped>
+  #profile-container:hover #profile-img-color,
+  #profile-container.is-active #profile-img-color {
+    opacity: 1;
+  }
+</style>

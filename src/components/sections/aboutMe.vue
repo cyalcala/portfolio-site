@@ -32,7 +32,9 @@
 
     <div class="padding-y md:column-gap mt-6 grid grid-cols-12">
       <div
-        class="pointer-events-auto relative w-full group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5]"
+        class="pointer-events-auto relative w-full group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5] cursor-pointer about-profile-container"
+        :class="{ 'is-active': isColorActive }"
+        @click="toggleColor"
       >
         <!-- Grayscale/blend image (bottom) -->
         <img
@@ -43,7 +45,7 @@
         <!-- Full color image (top) -->
         <img
           :src="profile2"
-          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out brightness-90 opacity-0 group-hover:opacity-100"
+          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out brightness-90 opacity-0 profile-img-color"
           alt="Headshot of Cyrus Alcala facing a camera"
         />
       </div>
@@ -81,6 +83,10 @@
   import { onBeforeMount, onMounted, ref } from 'vue';
 
   const aboutMe = ref('Selected Projects /');
+  const isColorActive = ref(false);
+  const toggleColor = () => {
+    isColorActive.value = !isColorActive.value;
+  };
 
   // const initialPath = ref(`M0 0H${width.value}  V${height.value} H0 Z`);
   // const targetPath = ref(
@@ -110,3 +116,10 @@
     animateAboutMeSectionLeave('#about-me-section');
   });
 </script>
+
+<style scoped>
+  .about-profile-container:hover .profile-img-color,
+  .about-profile-container.is-active .profile-img-color {
+    opacity: 1;
+  }
+</style>
