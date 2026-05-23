@@ -46,7 +46,7 @@ const socialLinks = [
   },
   {
     label: 'Medium',
-    url: 'https://medium.com/@cyalcala',
+    url: 'https://medium.com/@cyalcala7',
   },
 ];
 
