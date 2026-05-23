@@ -62,7 +62,7 @@
 
           <div
             id="profile-container"
-            class="relative col-span-full mt-8 h-[45vh] max-w-md mx-auto flex-col rounded-lg select-none sm:col-span-4 sm:mx-0 sm:mt-0 sm:h-full md:flex md:h-[50vh] group overflow-hidden"
+            class="relative w-full col-span-full mt-8 h-[45vh] max-w-md mx-auto flex-col rounded-lg select-none sm:col-span-4 sm:mx-0 sm:mt-0 sm:h-full md:flex md:h-[50vh] group overflow-hidden"
           >
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
             <!-- Full color image (bottom) -->

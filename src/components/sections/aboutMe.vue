@@ -32,7 +32,7 @@
 
     <div class="padding-y md:column-gap mt-6 grid grid-cols-12">
       <div
-        class="pointer-events-auto relative group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5]"
+        class="pointer-events-auto relative w-full group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5]"
       >
         <!-- Full color image (bottom) -->
         <img
