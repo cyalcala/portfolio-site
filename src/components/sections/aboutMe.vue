@@ -34,16 +34,16 @@
       <div
         class="pointer-events-auto relative w-full group overflow-hidden rounded-lg select-none col-span-full md:col-span-4 aspect-[1/1.5]"
       >
-        <!-- Full color image (bottom) -->
+        <!-- Grayscale/blend image (bottom) -->
         <img
           :src="profile2"
-          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out brightness-90"
+          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out mix-blend-screen brightness-90 grayscale"
           alt="Headshot of Cyrus Alcala facing a camera"
         />
-        <!-- Grayscale/blend image (top) -->
+        <!-- Full color image (top) -->
         <img
           :src="profile2"
-          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out mix-blend-screen brightness-90 grayscale group-hover:opacity-0"
+          class="absolute inset-0 size-full rounded-lg object-cover object-top transition-all duration-700 ease-in-out brightness-90 opacity-0 group-hover:opacity-100"
           alt="Headshot of Cyrus Alcala facing a camera"
         />
       </div>
