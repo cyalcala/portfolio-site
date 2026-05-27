@@ -59,6 +59,10 @@ const resourceLinks = [
     label: 'Figma Template',
     url: 'https://www.figma.com/community/file/1328038510191576951/project-starter-template',
   },
+  {
+    label: 'Portfolio by Hetari',
+    url: 'https://github.com/hetari/portfolio',
+  },
 ];
 
 const heroText =

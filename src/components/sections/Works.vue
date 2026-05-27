@@ -148,7 +148,7 @@
       tags: ['Bun', 'Astro', 'Zig', 'Trigger.dev'],
       videoSrc: work2,
       imageBg: workBg2,
-      url: 'https://github.com/cyalcala/va-freelance-hub',
+      url: 'https://remotejobs-ph.pages.dev',
       year: '2024',
     },
     {
